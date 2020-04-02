@@ -171,9 +171,9 @@ var everything="";
  for (let i = 0; i < popSize; i++) {
       everything += population[i].toString() + "<br>";
     }
-	resultDiv.innerHTML = "<b>All phrases:</b><br>" + everything;	
+	resultDiv.innerHTML = "<b>All individuals:</b><br>" + everything;	
 
-	let statstext = "<br> <b>Total generations:</b>&nbsp     " + itr.toString() + "<br>";
+	let statstext = "<br> <b>Total generations:</b>&nbsp     " + (itr+1).toString() + "<br>";
   statstext += "<b>Average fitness:</b>       " + avgFitness.toString();
 avgFitDiv.innerHTML=statstext;
 
